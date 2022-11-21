@@ -30,7 +30,7 @@ const Header = () => {
                             </div>
                             
                                 <div className="know_tm_button">
-                                    <a href="" download="">Download CV</a>
+                                <button className="daftar">  <span>Daftar</span><i></i></button>
                                 </div>
 
                         </div>

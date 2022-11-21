@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/css/style.css"
-import "../assets/css/dark.css"
 
 import About from "../component/About";
 import Resume from "../component/Resume";
@@ -22,10 +21,10 @@ const Home = () => {
                     <div className="container">
                         <div className="know_tm_mainpart">
                             <About />
-                            {/* <Resume />
-                            <Portfolio />
+                            <Resume />
+                            {/* <Portfolio /> */}
                             <Service />
-                            <Contact /> */}
+                            <Contact />
                         </div>
                     </div>
                     <Footer />
