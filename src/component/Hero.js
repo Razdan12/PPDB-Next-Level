@@ -10,7 +10,6 @@ import service from "../assets/img/svg/gear.svg";
 import contact from "../assets/img/svg/letter.svg";
 
 import Animasi from "./Animasi";
-import "../assets/css/animation.css";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -27,10 +26,15 @@ const Hero = () => {
                   <h4 className="name">SMP Purbalingga</h4>
                   <p className="text">Sekolah Unggulan</p>
                   <div className="know_tm_button">
-                   
-                   <button className="daftar"><span>Daftar</span><i></i></button>
-                   
-                    <button className="login"> <span>Login</span><i></i></button>
+                    <button className="btn-light">
+                      <span className="span1">Daftar</span>
+                      <i className="i"></i>
+                    </button>
+
+                    <button className="btn-light">
+                      <span className="span1">Login</span>
+                      <i className="i"></i>
+                    </button>
                   </div>
                 </div>
 
@@ -55,18 +59,14 @@ const Hero = () => {
                   <li>
                     <img className="svg" src={portfolio} alt="" />
                     <span>Gallery</span>
-                    <a className="know_tm_full_link" href="#portfolio"></a>
+                    <a className="know_tm_full_link" href="#gallery"></a>
                   </li>
                   <li>
                     <img className="svg" src={service} alt="" />
                     <span>Informasi</span>
                     <a className="know_tm_full_link" href="#service"></a>
                   </li>
-                  <li>
-                    <img className="svg" src={service} alt="" />
-                    <span>Guru & Karyawan</span>
-                    <a className="know_tm_full_link" href="#service"></a>
-                  </li>
+                  
 
                   <li>
                     <img className="svg" src={contact} alt="" />

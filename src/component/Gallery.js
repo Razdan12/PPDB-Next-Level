@@ -1,77 +1,40 @@
-// import React, { useState }from 'react'
-// import "../assets/css/portfolio.css";
-// import { useQuery } from "@apollo/client";
-// import { GET_PORTFOLIO } from "../GraphQl/Queries";
-// import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill,BsFillXCircleFill } from "react-icons/bs";
+import React from "react";
 
-// const Gallery = () => {
-//     const { data } = useQuery(GET_PORTFOLIO);
-//     const [slideNumber, setSlideNumber] = useState(0)
-//     const [openModal, setOpenModal] = useState(false)
-  
-//     const handleOpenModal = (index) => {
-//         console.log(index)
-//       setSlideNumber(index)
-//       setOpenModal(true)
-//     }
-  
-//     // Close Modal
-//     const handleCloseModal = () => {
-//       setOpenModal(false)
-//     }
-  
-//     // Previous Image
-//     // const prevSlide = () => {
-//     //   slideNumber === 0 
-//     //   ? setSlideNumber( data.length -1 ) 
-//     //   : setSlideNumber( slideNumber - 1 )
-//     // }
-  
-//     // Next Image  
-//     // const nextSlide = () => {
-//     //   slideNumber + 1 === data.length 
-//     //   ? setSlideNumber(0) 
-//     //   : setSlideNumber(slideNumber + 1)
-//     // }
-  
-//     return (
-//       <div>
-  
-//         {openModal && 
-//           <div className='sliderWrap'>
-//             <BsFillXCircleFill className='btnClose' onClick={handleCloseModal}  />
-//             {/* <BsFillArrowLeftCircleFill className='btnPrev'  />
-//             <BsFillArrowRightCircleFill className='btnNext'  /> */}
-//             <div className='fullScreenImage'>
-//               <img src={data.image} alt='' />
-//             </div>
-//           </div>
-//         }
-  
-//         {/* <br />
-//         Current slide number:  {slideNumber}
-//         <br />
-//         Total Slides: {data.length}
-//         <br /><br /> */}
-  
-//         <div className='galleryWrap'>
-//           {
-//             data?.portfolio.map((image, index) => {
-//               return(
-//                 <div 
-//                   className='single' 
-//                   key={index}
-//                   onClick={ () => handleOpenModal(index) }
-//                 >
-//                   <img src={image.image} alt='' />
-//                 </div>
-//               )
-//             })
-//           }
-//         </div>
-  
-//       </div>
-//     )
-// }
+const Gallery = () => {
+  return (
+    <div>
+      <div id="gallery" className="know_tm_main_section">
+        <div className="know_tm_services">
+          <div class="lightbox">
+            <div class="row">
+              <div class="col-lg-6">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+                  data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                  alt="Table Full of Spices"
+                  class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                />
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp"
+                  data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                  alt="Coconut with Strawberries"
+                  class="w-100 shadow-1-strong rounded"
+                />
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Vertical/1.webp"
+                  data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                  alt="Dark Roast Iced Coffee"
+                  class="w-100 shadow-1-strong rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// export default Gallery
+export default Gallery;

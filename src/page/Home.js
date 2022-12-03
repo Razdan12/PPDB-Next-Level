@@ -3,12 +3,12 @@ import "../assets/css/style.css"
 
 import About from "../component/About";
 import Resume from "../component/Resume";
-import Portfolio from "../component/Portfolio";
 import Service from "../component/Service";
 import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Hero from "../component/Hero";
+import Gallery from "../component/Gallery";
 
 const Home = () => {
  
@@ -22,8 +22,8 @@ const Home = () => {
                         <div className="know_tm_mainpart">
                             <About />
                             <Resume />
-                            {/* <Portfolio /> */}
                             <Service />
+                            <Gallery/>
                             <Contact />
                         </div>
                     </div>
