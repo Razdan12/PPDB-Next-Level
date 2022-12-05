@@ -3,7 +3,7 @@ import React from "react";
 import Home from "./page/Home";
 import Login from "./component/Form/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./admin/Index";
+// import Index from "./admin/Index";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={<Index />} />
+          {/* <Route path="/admin" element={<Index />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
